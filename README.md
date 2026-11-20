@@ -111,6 +111,39 @@ More details:
 
 ## How it works
 
+```mermaid
+flowchart TD
+    A(["PDF / JPG / PNG input"]) --> B["Input validation + PyMuPDF metadata<br/>type, size, at most 10 pages, text layer"]
+    B -->|bad file| ERR
+    B --> D["Gemini call<br/>budget guard, cache, backoff on API errors"]
+    D -->|"API failure or over budget"| ERR
+    D --> E["Validation<br/>JSON, Pydantic, JSON Schema, totals, sanity"]
+    E --> F{"Checks pass?"}
+    F -->|yes| R
+    F -->|no| G{"Already retried?"}
+    G -->|no| H["Retry once with feedback<br/>failed check + numbers, higher thinking"]
+    H --> D
+    G -->|yes| S{"Schema-valid?"}
+    S -->|yes| R["Review heuristics<br/>scan or photo, ambiguous date, more than 15 rows"]
+    S -->|no| ERR["processing_error<br/>no output JSON, exit 1"]
+    R --> OK["outputs/ID.json<br/>clean or needs_review"]
+    OK --> M["outputs/_meta/ID.json<br/>tokens, cost, latency, flags"]
+    ERR --> M
+    M --> K["eval.py<br/>field-level accuracy on L01 to L10"]
+    K --> L(["REPORT.md<br/>accuracy, failure analysis, cost"])
+
+    classDef io fill:#e8f0fe,stroke:#4a6fd1,color:#1a2b5c
+    classDef step fill:#f5f5f5,stroke:#888,color:#222
+    classDef decision fill:#fff4d6,stroke:#c9a227,color:#4a3b00
+    classDef good fill:#e3f5e1,stroke:#3d9a3a,color:#173d16
+    classDef bad fill:#fde7e7,stroke:#c94a4a,color:#5c1a1a
+    class A,L io
+    class B,D,E,H,R,M,K step
+    class F,G,S decision
+    class OK good
+    class ERR bad
+```
+
 1. **Input checks** (`src/inputs.py`), before any API call. The file must exist, have a supported extension, not be empty and be under 20 MB. Its first bytes must match the extension. A PDF must open, must not be password protected and must have at most 10 pages. An image must decode fully. PyMuPDF also records the page count and whether the PDF has a text layer.
 2. **Model call** (`src/llm.py`). The file goes to Gemini with a system prompt that holds the labelling rules (`src/prompt.py`). The Pydantic model is passed as `response_schema`. Settings: thinking level `low`, default temperature, `max_output_tokens` 8192. Timeouts, 5xx errors and per-minute rate limits are retried with exponential backoff, 4 attempts in total.
 3. **Validation** (`src/validate.py`):
