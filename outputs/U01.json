@@ -1,0 +1,26 @@
+{
+  "is_invoice": true,
+  "vendor": "Blue Lotus Hospitality",
+  "invoice_number": "BL/GA/26/5528",
+  "invoice_date": "2026-11-10",
+  "currency": "INR",
+  "line_items": [
+    {
+      "description": "Room charges, Deluxe (per night)",
+      "quantity": 3.0,
+      "amount": 21600.0
+    },
+    {
+      "description": "Restaurant and bar",
+      "quantity": 1.0,
+      "amount": 5430.0
+    },
+    {
+      "description": "Laundry service",
+      "quantity": 1.0,
+      "amount": 650.0
+    }
+  ],
+  "tax_total": 2980.5,
+  "total": 30660.5
+}

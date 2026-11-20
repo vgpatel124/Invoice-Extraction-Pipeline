@@ -1,0 +1,31 @@
+{
+  "is_invoice": true,
+  "vendor": "Lakeside Printing Co",
+  "invoice_number": "LP-10932",
+  "invoice_date": "2026-10-21",
+  "currency": "GBP",
+  "line_items": [
+    {
+      "description": "Prospectus, A4 24pp, saddle-stitched",
+      "quantity": 1500,
+      "amount": 2130.0
+    },
+    {
+      "description": "Pull-up banner 850x2000mm",
+      "quantity": 4,
+      "amount": 272.0
+    },
+    {
+      "description": "Letterhead 120gsm (ream of 500)",
+      "quantity": 6,
+      "amount": 246.0
+    },
+    {
+      "description": "Delivery",
+      "quantity": 1,
+      "amount": 28.0
+    }
+  ],
+  "tax_total": 535.2,
+  "total": 3211.2
+}

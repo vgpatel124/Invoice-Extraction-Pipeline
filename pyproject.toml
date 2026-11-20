@@ -1,0 +1,38 @@
+[project]
+name = "invoice-extractor"
+version = "0.1.0"
+description = "LLM-based invoice extraction pipeline with validation, eval harness and cost tracking"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "google-genai>=3.6.1",
+    "jsonschema>=4.26.0",
+    "pillow>=13.0.0",
+    "pydantic>=2.14.4",
+    "pymupdf>=2.1",
+    "python-dotenv>=1.2.4",
+    "rapidfuzz>=3.14.6",
+    "rich>=15.0.0",
+    "tenacity>=9.1.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
+ui = [
+    "streamlit>=1.67.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore:builtin type .* has no __module__ attribute:DeprecationWarning"]

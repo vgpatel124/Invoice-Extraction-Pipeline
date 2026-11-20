@@ -1,0 +1,31 @@
+{
+  "is_invoice": true,
+  "vendor": "PIXEL HARBOR STUDIO",
+  "invoice_number": "PHS-1042",
+  "invoice_date": "2026-03-14",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Brand identity package",
+      "quantity": 1.0,
+      "amount": 3200.0
+    },
+    {
+      "description": "Social media templates (set of 12)",
+      "quantity": 1.0,
+      "amount": 850.0
+    },
+    {
+      "description": "Additional revision rounds",
+      "quantity": 3.0,
+      "amount": 450.0
+    },
+    {
+      "description": "Returning client discount (10%)",
+      "quantity": null,
+      "amount": -450.0
+    }
+  ],
+  "tax_total": 334.13,
+  "total": 4384.13
+}

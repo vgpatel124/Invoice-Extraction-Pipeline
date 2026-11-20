@@ -1,0 +1,26 @@
+{
+  "is_invoice": true,
+  "vendor": "TechNova Solutions GmbH",
+  "invoice_number": "RE-2026-0317",
+  "invoice_date": "2026-04-28",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Softwareentwicklung (Stunden)",
+      "quantity": 64,
+      "amount": 6080.0
+    },
+    {
+      "description": "Projektmanagement (Stunden)",
+      "quantity": 16,
+      "amount": 1760.0
+    },
+    {
+      "description": "Einrichtung Hosting (einmalig)",
+      "quantity": 1,
+      "amount": 480.0
+    }
+  ],
+  "tax_total": 1580.8,
+  "total": 9900.8
+}

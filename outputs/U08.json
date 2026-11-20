@@ -1,0 +1,31 @@
+{
+  "is_invoice": true,
+  "vendor": "Sakura Tea Traders B.V.",
+  "invoice_number": "2026/0314",
+  "invoice_date": "2026-03-14",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Sencha Premium, 1 kg bag",
+      "quantity": 8,
+      "amount": 340.0
+    },
+    {
+      "description": "Matcha ceremonial grade, 100 g tin",
+      "quantity": 30,
+      "amount": 567.0
+    },
+    {
+      "description": "Bamboo whisk (chasen)",
+      "quantity": 12,
+      "amount": 87.0
+    },
+    {
+      "description": "Shipping and handling",
+      "quantity": 1,
+      "amount": 35.0
+    }
+  ],
+  "tax_total": 107.25,
+  "total": 1136.25
+}

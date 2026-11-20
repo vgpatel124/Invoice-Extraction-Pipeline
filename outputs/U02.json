@@ -1,0 +1,36 @@
+{
+  "is_invoice": true,
+  "vendor": "Harborview Dental Supplies",
+  "invoice_number": "HDS-60417",
+  "invoice_date": "2026-09-14",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Nitrile exam gloves, M (case of 10 boxes)",
+      "quantity": 6,
+      "amount": 384.0
+    },
+    {
+      "description": "Disposable dental mirrors (pack of 100)",
+      "quantity": 4,
+      "amount": 154.0
+    },
+    {
+      "description": "Prophy paste, mint (jar of 200)",
+      "quantity": 3,
+      "amount": 123.75
+    },
+    {
+      "description": "Saliva ejector tips (bag of 100)",
+      "quantity": 10,
+      "amount": 98.0
+    },
+    {
+      "description": "Patient bibs (case of 500)",
+      "quantity": 2,
+      "amount": 72.0
+    }
+  ],
+  "tax_total": 85.25,
+  "total": 917.0
+}

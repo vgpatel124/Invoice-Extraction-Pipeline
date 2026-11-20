@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Invoice extraction result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["is_invoice", "vendor", "invoice_number", "invoice_date", "currency", "line_items", "tax_total", "total"],
+  "properties": {
+    "is_invoice": { "type": "boolean" },
+    "vendor": { "type": ["string", "null"] },
+    "invoice_number": { "type": ["string", "null"] },
+    "invoice_date": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "currency": { "type": ["string", "null"], "pattern": "^[A-Z]{3}$" },
+    "line_items": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description", "quantity", "amount"],
+        "properties": {
+          "description": { "type": "string" },
+          "quantity": { "type": ["number", "null"] },
+          "amount": { "type": "number" }
+        }
+      }
+    },
+    "tax_total": { "type": ["number", "null"] },
+    "total": { "type": ["number", "null"] }
+  },
+  "if": { "properties": { "is_invoice": { "const": false } } },
+  "then": {
+    "properties": {
+      "vendor": { "type": "null" }, "invoice_number": { "type": "null" }, "invoice_date": { "type": "null" },
+      "currency": { "type": "null" }, "line_items": { "type": "null" }, "tax_total": { "type": "null" }, "total": { "type": "null" }
+    }
+  }
+}

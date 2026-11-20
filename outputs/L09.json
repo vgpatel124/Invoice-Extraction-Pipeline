@@ -1,0 +1,36 @@
+{
+  "is_invoice": true,
+  "vendor": "COASTAL FRESH SEAFOODS",
+  "invoice_number": "CFS-4471",
+  "invoice_date": "2026-10-14",
+  "currency": "INR",
+  "line_items": [
+    {
+      "description": "King fish (seer), cleaned, kg",
+      "quantity": 12.5,
+      "amount": 11500.0
+    },
+    {
+      "description": "Tiger prawns 16/20, kg",
+      "quantity": 18.0,
+      "amount": 14040.0
+    },
+    {
+      "description": "Pomfret, whole, kg",
+      "quantity": 9.5,
+      "amount": 6080.0
+    },
+    {
+      "description": "Squid, cleaned, kg",
+      "quantity": 7.0,
+      "amount": 2870.0
+    },
+    {
+      "description": "Crab (live), kg",
+      "quantity": 11.0,
+      "amount": 6160.0
+    }
+  ],
+  "tax_total": 2032.5,
+  "total": 42682.5
+}

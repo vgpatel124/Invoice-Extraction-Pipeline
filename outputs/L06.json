@@ -1,0 +1,31 @@
+{
+  "is_invoice": true,
+  "vendor": "Anand & Rao Associates",
+  "invoice_number": "AR/2026/0093",
+  "invoice_date": "2026-05-30",
+  "currency": "INR",
+  "line_items": [
+    {
+      "description": "Monthly compliance retainer (May 2026)",
+      "quantity": null,
+      "amount": 45000.0
+    },
+    {
+      "description": "GST return filing (GSTR-1 and GSTR-3B)",
+      "quantity": 1.0,
+      "amount": 6500.0
+    },
+    {
+      "description": "TDS return preparation (quarterly)",
+      "quantity": 1.0,
+      "amount": 8000.0
+    },
+    {
+      "description": "Out-of-pocket expenses (reimbursable)",
+      "quantity": null,
+      "amount": 1240.0
+    }
+  ],
+  "tax_total": 10933.2,
+  "total": 71673.2
+}

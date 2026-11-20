@@ -1,0 +1,37 @@
+{
+  "document": "L09.pdf",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v1",
+  "input_mode": "native",
+  "input_tokens": 1199,
+  "output_tokens": 208,
+  "thinking_tokens": 300,
+  "latency_ms": 31048,
+  "retry_count": 0,
+  "cache_hit": true,
+  "estimated_cost_usd": 0.002804,
+  "spent_this_run_usd": 0,
+  "has_text_layer": false,
+  "page_count": 1,
+  "mime_type": "application/pdf",
+  "needs_review": true,
+  "review_reasons": [
+    "scan_or_photo"
+  ],
+  "validation_errors": [],
+  "processing_error": null,
+  "attempts": [
+    {
+      "model": "gemini-3.8-flash",
+      "thinking_level": "low",
+      "input_tokens": 1199,
+      "output_tokens": 208,
+      "thinking_tokens": 300,
+      "cost_usd": 0.002804,
+      "latency_ms": 31048,
+      "cache_hit": true,
+      "finish_reason": "STOP",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "is_invoice": true,
+  "vendor": "Metro Auto Parts",
+  "invoice_number": "MAP/D/09-0312",
+  "invoice_date": "2026-09-03",
+  "currency": "INR",
+  "line_items": [
+    {
+      "description": "Brake pad set, front (sedan)",
+      "quantity": 8.0,
+      "amount": 14800.0
+    },
+    {
+      "description": "Air filter element",
+      "quantity": 12.0,
+      "amount": 5040.0
+    },
+    {
+      "description": "Wiper blade 20 in (pair)",
+      "quantity": 15.0,
+      "amount": 5700.0
+    },
+    {
+      "description": "Engine oil 5W-30, 4 L can",
+      "quantity": 20.0,
+      "amount": 39200.0
+    },
+    {
+      "description": "Coolant concentrate, 1 L",
+      "quantity": 18.0,
+      "amount": 5580.0
+    }
+  ],
+  "tax_total": 19689.6,
+  "total": 90009.6
+}

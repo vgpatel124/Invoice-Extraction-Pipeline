@@ -1,0 +1,31 @@
+{
+  "is_invoice": true,
+  "vendor": "Northwind Logistics Ltd",
+  "invoice_number": "NWL-88213",
+  "invoice_date": "2026-04-08",
+  "currency": "GBP",
+  "line_items": [
+    {
+      "description": "Pallet freight, Manchester to Glasgow",
+      "quantity": 3.0,
+      "amount": 435.0
+    },
+    {
+      "description": "Fuel surcharge (flat rate)",
+      "quantity": 1.0,
+      "amount": 62.5
+    },
+    {
+      "description": "Warehousing, per pallet per week",
+      "quantity": 12.0,
+      "amount": 57.0
+    },
+    {
+      "description": "Proof-of-delivery admin fee",
+      "quantity": 3.0,
+      "amount": 15.0
+    }
+  ],
+  "tax_total": 113.9,
+  "total": 683.4
+}

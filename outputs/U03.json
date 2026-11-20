@@ -1,0 +1,26 @@
+{
+  "is_invoice": true,
+  "vendor": "QUICKSERVE IT RENTALS",
+  "invoice_number": "QS-30918",
+  "invoice_date": "2026-11-03",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "On-site technician (hours)",
+      "quantity": 12.5,
+      "amount": 1062.5
+    },
+    {
+      "description": "Laptop rental (per day)",
+      "quantity": 9.0,
+      "amount": 198.0
+    },
+    {
+      "description": "Travel charge",
+      "quantity": 1.0,
+      "amount": 45.0
+    }
+  ],
+  "tax_total": 0.0,
+  "total": 1305.5
+}

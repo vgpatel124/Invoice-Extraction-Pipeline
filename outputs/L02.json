@@ -1,0 +1,41 @@
+{
+  "is_invoice": true,
+  "vendor": "Shree Ganesh Stationers",
+  "invoice_number": "SGS/1847",
+  "invoice_date": "2026-08-19",
+  "currency": "INR",
+  "line_items": [
+    {
+      "description": "Exam pad A4 (200 pages)",
+      "quantity": 150,
+      "amount": 8700.0
+    },
+    {
+      "description": "Ball pen blue (box of 50)",
+      "quantity": 20,
+      "amount": 4800.0
+    },
+    {
+      "description": "Whiteboard duster",
+      "quantity": 10,
+      "amount": 350.0
+    },
+    {
+      "description": "Chart paper white (pack of 20)",
+      "quantity": 25,
+      "amount": 3000.0
+    },
+    {
+      "description": "Stapler pin No.10 (box)",
+      "quantity": 40,
+      "amount": 560.0
+    },
+    {
+      "description": "File folder, plastic",
+      "quantity": 100,
+      "amount": 2200.0
+    }
+  ],
+  "tax_total": 3529.8,
+  "total": 23139.8
+}

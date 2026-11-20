@@ -1,0 +1,61 @@
+{
+  "is_invoice": true,
+  "vendor": "ORBIT HARDWARE SUPPLIES",
+  "invoice_number": "OHS-0261-26",
+  "invoice_date": "2026-01-27",
+  "currency": "INR",
+  "line_items": [
+    {
+      "description": "Hex bolt M10 x 60 (box of 100)",
+      "quantity": 14.0,
+      "amount": 8960.0
+    },
+    {
+      "description": "Wood screw 2 in (box of 500)",
+      "quantity": 20.0,
+      "amount": 6300.0
+    },
+    {
+      "description": "Cutting disc 4 in (pack of 25)",
+      "quantity": 12.0,
+      "amount": 9360.0
+    },
+    {
+      "description": "Welding electrode 3.15mm (5 kg)",
+      "quantity": 18.0,
+      "amount": 12420.0
+    },
+    {
+      "description": "Angle grinder 850W",
+      "quantity": 3.0,
+      "amount": 10350.0
+    },
+    {
+      "description": "Drill bit set HSS (13 pc)",
+      "quantity": 6.0,
+      "amount": 6720.0
+    },
+    {
+      "description": "Safety gloves, leather (pair)",
+      "quantity": 40.0,
+      "amount": 3840.0
+    },
+    {
+      "description": "Spirit level 600mm",
+      "quantity": 5.0,
+      "amount": 2050.0
+    },
+    {
+      "description": "Measuring tape 5m",
+      "quantity": 15.0,
+      "amount": 2775.0
+    },
+    {
+      "description": "Anchor fastener M12 (box of 50)",
+      "quantity": 9.0,
+      "amount": 7830.0
+    }
+  ],
+  "tax_total": 12708.9,
+  "total": 83313.9
+}

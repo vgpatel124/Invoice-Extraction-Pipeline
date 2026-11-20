@@ -1,0 +1,27 @@
+# Secrets
+.env
+
+# Confidential sample pack (never commit)
+data/
+labelled/
+unlabelled/
+Assignment-1.pdf
+/schema.json
+*.local.md
+
+# Ad-hoc CLI output from the README example
+/out.json
+
+# Caches and local state (model responses, spend ledger)
+.cache/
+
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+.pytest_cache/
+
+# OS
+.DS_Store
+

@@ -1,0 +1,31 @@
+{
+  "is_invoice": true,
+  "vendor": "Bluefin Cloud Services Inc.",
+  "invoice_number": "BF-2026-07-11874",
+  "invoice_date": "2026-07-01",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Compute instances (instance-hours)",
+      "quantity": 1440,
+      "amount": 122.4
+    },
+    {
+      "description": "Managed database, standard tier (month)",
+      "quantity": 1,
+      "amount": 249.0
+    },
+    {
+      "description": "Object storage (TB-month)",
+      "quantity": 2.5,
+      "amount": 57.5
+    },
+    {
+      "description": "Support plan, Business (month)",
+      "quantity": 1,
+      "amount": 100.0
+    }
+  ],
+  "tax_total": 0.0,
+  "total": 528.9
+}

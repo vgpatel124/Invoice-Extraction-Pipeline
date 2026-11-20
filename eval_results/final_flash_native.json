@@ -1,0 +1,379 @@
+{
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v1",
+  "input_mode": "native",
+  "fields": {
+    "is_invoice": {
+      "strict": 10,
+      "normalized": 10,
+      "n": 10
+    },
+    "vendor": {
+      "strict": 6,
+      "normalized": 9,
+      "n": 9
+    },
+    "invoice_number": {
+      "strict": 9,
+      "normalized": 9,
+      "n": 9
+    },
+    "invoice_date": {
+      "strict": 9,
+      "normalized": 9,
+      "n": 9
+    },
+    "currency": {
+      "strict": 9,
+      "normalized": 9,
+      "n": 9
+    },
+    "line_items": {
+      "strict": 9,
+      "normalized": 9,
+      "n": 9
+    },
+    "tax_total": {
+      "strict": 9,
+      "normalized": 9,
+      "n": 9
+    },
+    "total": {
+      "strict": 9,
+      "normalized": 9,
+      "n": 9
+    },
+    "all_fields_correct": {
+      "strict": 6,
+      "normalized": 9,
+      "n": 9
+    }
+  },
+  "line_items": {
+    "expected_rows": 66,
+    "predicted_rows": 66,
+    "correct_rows": 66,
+    "missing_rows": 0,
+    "extra_rows": 0,
+    "wrong_quantity": 0,
+    "wrong_amount": 0,
+    "wrong_description": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "review_flag": {
+    "flagged_with_error": 0,
+    "flagged_no_error": 4,
+    "not_flagged_with_error": 0,
+    "not_flagged_no_error": 6,
+    "processing_errors": 0
+  },
+  "cost": {
+    "documents": 10,
+    "api_calls_incl_retries": 10,
+    "input_tokens": 13018,
+    "output_tokens": 3052,
+    "thinking_tokens": 379,
+    "avg_input_tokens": 1301.8,
+    "avg_output_tokens_incl_thinking": 343.1,
+    "total_cost_usd": 0.022631,
+    "avg_cost_per_doc_usd": 0.002263,
+    "avg_cost_per_doc_usd_2027_prices": 0.004526,
+    "spent_this_run_usd": 0,
+    "ledger_total_usd": 0.050636,
+    "budget_usd": 2.0
+  },
+  "per_document": {
+    "L01": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": false,
+      "review_reasons": [],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L02": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": true,
+      "review_reasons": [
+        "scan_or_photo"
+      ],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L03": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": false,
+      "review_reasons": [],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L04": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": true,
+      "review_reasons": [
+        "many_line_items"
+      ],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L05": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": false,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": false,
+      "review_reasons": [],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L06": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": false,
+      "review_reasons": [],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L07": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": false,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": false,
+      "review_reasons": [],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L08": {
+      "normalized": {
+        "is_invoice": true,
+        "other_fields_null": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "other_fields_null": true
+      },
+      "retry_count": 0,
+      "needs_review": false,
+      "review_reasons": [],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L09": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": false,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": true,
+      "review_reasons": [
+        "scan_or_photo"
+      ],
+      "validation_errors": [],
+      "processing_error": null
+    },
+    "L10": {
+      "normalized": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "strict": {
+        "is_invoice": true,
+        "vendor": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "currency": true,
+        "line_items": true,
+        "tax_total": true,
+        "total": true
+      },
+      "retry_count": 0,
+      "needs_review": true,
+      "review_reasons": [
+        "scan_or_photo",
+        "ambiguous_date"
+      ],
+      "validation_errors": [],
+      "processing_error": null
+    }
+  },
+  "mismatches": [
+    {
+      "doc": "L05",
+      "field": "vendor",
+      "rule": "strict_only",
+      "expected": "Orbit Hardware Supplies",
+      "got": "ORBIT HARDWARE SUPPLIES"
+    },
+    {
+      "doc": "L07",
+      "field": "vendor",
+      "rule": "strict_only",
+      "expected": "Pixel Harbor Studio",
+      "got": "PIXEL HARBOR STUDIO"
+    },
+    {
+      "doc": "L09",
+      "field": "vendor",
+      "rule": "strict_only",
+      "expected": "Coastal Fresh Seafoods",
+      "got": "COASTAL FRESH SEAFOODS"
+    }
+  ]
+}

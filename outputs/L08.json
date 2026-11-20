@@ -1,0 +1,10 @@
+{
+  "is_invoice": false,
+  "vendor": null,
+  "invoice_number": null,
+  "invoice_date": null,
+  "currency": null,
+  "line_items": null,
+  "tax_total": null,
+  "total": null
+}

@@ -1,0 +1,85 @@
+[1/10] L01.pdf ... cache
+[2/10] L02.jpg ... cache
+[3/10] L03.pdf ... cache
+[4/10] L04.pdf ... cache
+[5/10] L05.pdf ... cache
+[6/10] L06.pdf ... cache
+[7/10] L07.pdf ... cache
+[8/10] L08.pdf ... cache
+[9/10] L09.pdf ... cache
+[10/10] L10.pdf ... cache
+  Per-field accuracy (invoice fields scored on  
+            invoice documents only)             
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Field              ┃     Strict ┃ Normalized ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ is_invoice         │ 7/10 (70%) │ 7/10 (70%) │
+│ vendor             │  6/9 (67%) │  6/9 (67%) │
+│ invoice_number     │  6/9 (67%) │  6/9 (67%) │
+│ invoice_date       │  6/9 (67%) │  6/9 (67%) │
+│ currency           │  6/9 (67%) │  6/9 (67%) │
+│ line_items         │  6/9 (67%) │  6/9 (67%) │
+│ tax_total          │  6/9 (67%) │  6/9 (67%) │
+│ total              │  6/9 (67%) │  6/9 (67%) │
+├────────────────────┼────────────┼────────────┤
+│ all fields correct │  6/9 (67%) │  6/9 (67%) │
+└────────────────────┴────────────┴────────────┘
+                                                      Per-document results (Normalized)                                                       
+┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━┓
+┃ Doc           ┃ is_invoice ┃ vendor ┃ inv_number ┃ inv_date ┃ currency ┃ line_items ┃ tax_total ┃ total ┃ rows ok ┃ retry ┃ review ┃ error ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━┩
+│ L01           │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │   4/4   │   0   │        │       │
+│ L02           │     ✗      │   ✗    │     ✗      │    ✗     │    ✗     │     ✗      │     ✗     │   ✗   │   0/6   │   0   │  yes   │       │
+│ L03           │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │   4/4   │   0   │        │       │
+│ L04           │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │  24/24  │   0   │  yes   │       │
+│ L05           │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │  10/10  │   0   │        │       │
+│ L06           │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │   4/4   │   0   │        │       │
+│ L07           │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │   4/4   │   0   │        │       │
+│ L08 (non-inv) │     ✓      │   ✓    │     ✓      │    ✓     │    ✓     │     ✓      │     ✓     │   ✓   │    ·    │   0   │        │       │
+│ L09           │     ✗      │   ✗    │     ✗      │    ✗     │    ✗     │     ✗      │     ✗     │   ✗   │   0/5   │   0   │  yes   │       │
+│ L10           │     ✗      │   ✗    │     ✗      │    ✗     │    ✗     │     ✗      │     ✗     │   ✗   │   0/5   │   0   │  yes   │       │
+└───────────────┴────────────┴────────┴────────────┴──────────┴──────────┴────────────┴───────────┴───────┴─────────┴───────┴────────┴───────┘
+  Line-item breakdown (all   
+   labelled invoices, rows   
+      aligned in order)      
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━┓
+┃ Metric            ┃ Value ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━┩
+│ expected rows     │    66 │
+│ predicted rows    │    50 │
+│ correct rows      │    50 │
+│ missing rows      │    16 │
+│ extra rows        │     0 │
+│ wrong quantity    │     0 │
+│ wrong amount      │     0 │
+│ wrong description │     0 │
+│ precision         │ 1.000 │
+│ recall            │ 0.758 │
+│ f1                │ 0.862 │
+└───────────────────┴───────┘
+Review flag vs actual errors (completed
+             extractions)              
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃              ┃ Has error ┃ No error ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│ needs_review │         3 │        1 │
+│ not flagged  │         0 │        6 │
+└──────────────┴───────────┴──────────┘
+Non-invoice L08: is_invoice correct, other fields null: yes
+
+Cost (paid-tier prices; thinking billed as output; retries included)
+  documents: 10
+  api_calls_incl_retries: 10
+  input_tokens: 10306
+  output_tokens: 3254
+  thinking_tokens: 0
+  avg_input_tokens: 1030.6
+  avg_output_tokens_incl_thinking: 325.4
+  total_cost_usd: 0.011228
+  avg_cost_per_doc_usd: 0.001123
+  avg_cost_per_doc_usd_2027_prices: 0.001123
+  spent_this_run_usd: 0
+  ledger_total_usd: 0.050636
+  budget_usd: 2.0
+
+Saved eval_results/exp_text_only_flash_lite.json
